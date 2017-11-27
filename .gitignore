@@ -1,0 +1,8 @@
+sync_kinect_data/
+recycle/
+docs/
+*.npz
+*.npy
+*.pyc
+competition_data_proc_and_test.py
+data/
