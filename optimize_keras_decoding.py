@@ -97,6 +97,8 @@ perf = c_utils.model_performance(  # Calculate performance
 
 # Make predictions on the test set and save for the competition
 test_preds = model.predict(test_proc_neural)
-c_utils.package_test_predictions(
+fn = c_utils.package_test_predictions(
     team_name=team_name,
     data=test_preds)
+c_utils.movefile_for_eval(fn)
+

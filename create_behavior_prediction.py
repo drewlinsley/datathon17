@@ -70,7 +70,7 @@ preds = model.predict(
     val_future_behavior)  # Make predictions on validation data
 perf = c_utils.model_performance(  # Calculate performance
     preds=preds,
-    gt=val_future_behavior,
+    gt=val_proc_behavior,
     labels=behavior_labels)
 
 # Extract LSTM weight matrices, which are organized I/F/C/O
@@ -127,9 +127,11 @@ report = 'We trained a recurrent model to predict behavior. ' +\
     'certain behaviors.'  # Obviously, expand on this analysis.
 
 # Make predictions on the test set and save for the competition
-c_utils.savefig(team_name)
-c_utils.package_test_predictions(
+fn = c_utils.savefig(team_name)
+c_utils.movefile_for_eval(fn)
+fn = c_utils.package_test_predictions(
     team_name=team_name,
     data=report,
     create=True)
+c_utils.movefile_for_eval(fn)
 plt.show()

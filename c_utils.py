@@ -1,5 +1,8 @@
 """Utilities for Neural Datathon competition."""
+
+import os
 import json
+import shutil
 import datetime
 import numpy as np
 from matplotlib import pyplot as plt
@@ -82,10 +85,26 @@ def package_test_predictions(team_name, data, create=False):
         fs = 'CREATE_%s' % fs
     else:
         fs = 'OPTIMIZE_%s' % fs
-    np.save('%s_%s' % (fs, team_name), data)
+    filename = '%s_%s' % (fs, team_name)
+    np.save(filename, data)
+    return filename + '.npy'
 
 
 def savefig(team_name):
     """Output a pdf with a create plot."""
     fs = datetime.datetime.today().strftime('%m_%d')
-    plt.savefig('%s_CREATE_%s.pdf' % (fs, team_name))
+    filename = 'CREATE_%s_%s.pdf' % (fs, team_name)
+    plt.savefig(filename)
+    return filename
+
+
+def movefile_for_eval(
+        filename,
+        eval_dir=os.path.join(
+            '..%ssubmissions' % os.path.sep,
+            datetime.datetime.today().strftime('%m_%d'))):
+    """Moves files to the evaluation folder."""
+    shutil.move(
+        filename,
+        os.path.join(eval_dir, filename.split(os.path.sep)[-1]))
+

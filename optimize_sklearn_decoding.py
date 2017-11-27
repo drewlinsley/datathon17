@@ -65,6 +65,8 @@ for selected_behavior in range(train_proc_behavior.shape[-1]):
 
 # Make predictions on the test set and save for the competition
 test_preds = clf.predict(test_proc_neural)
-c_utils.package_test_predictions(
+fn = c_utils.package_test_predictions(
     team_name=team_name,
     data=test_preds)
+c_utils.movefile_for_eval(fn)
+

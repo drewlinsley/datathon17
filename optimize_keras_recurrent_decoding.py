@@ -134,18 +134,16 @@ c_utils.plot_weights(
     save_plot=None)
 
 # Make predictions and measure correlation on validation set
-val_proc_neural = train_proc_neural[-100:, :]
-val_proc_behavior = train_proc_behavior[-100:, :]
-train_proc_neural = train_proc_neural[:-100, :]
-train_proc_behavior = train_proc_behavior[:-100, :]
 preds = model.predict(
-    val_proc_neural)  # Make predictions on validation data
+    val_future_neural)  # Make predictions on validation data
 perf = c_utils.model_performance(  # Calculate performance
     preds=preds,
     gt=val_proc_behavior,
     labels=behavior_labels)
 
 # Make predictions on the test set and save for the competition
-c_utils.package_test_predictions(
+fn = c_utils.package_test_predictions(
     team_name=team_name,
     data=preds)
+c_utils.movefile_for_eval(fn)
+

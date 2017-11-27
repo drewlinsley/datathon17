@@ -108,10 +108,12 @@ report = 'We applied a cluster analysis to behavior and neural ' +\
     'the two data sources.'
 
 # Make predictions on the test set and save for the competition
-c_utils.savefig(team_name)
-c_utils.package_test_predictions(
+fn = c_utils.savefig(team_name)
+c_utils.movefile_for_eval(fn)
+fn = c_utils.package_test_predictions(
     team_name=team_name,
     data=report,
     create=True)
+c_utils.movefile_for_eval(fn)
 plt.show()
 plt.close(f)
