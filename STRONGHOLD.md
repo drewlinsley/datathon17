@@ -1,5 +1,5 @@
-## Logging into Brown CIS stronghold to analyze Neurodatathon data.
-# Because the dataset used in this competition is so special, it is being securely held in Brown's stronghold computing environment. This means that in order to analyze the data you must (1) have stronghold login credentials from CIS, and (2) write and run your analysis code exclusively within the stronghold.
+# Logging into Brown CIS stronghold to analyze Neurodatathon data.
+### Because the dataset used in this competition is so special, it is being securely held in Brown's stronghold computing environment. This means that in order to analyze the data you must (1) have stronghold login credentials from CIS, and (2) write and run your analysis code exclusively within the stronghold.
 
 1. If you have signed up for the Neurodatathon, you will receive an email from CIS with your login information.
 	- To access stronghold you will need the "Microsoft Remote Desktop" (MRD) app. This should be built into Windows machines. It can be downloaded in Mac and Unix appstores/package managers.
