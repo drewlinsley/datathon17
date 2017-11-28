@@ -3,7 +3,7 @@
 
 1. If you have signed up for the Neurodatathon, you will receive an email from CIS with your login information.
 	- To access stronghold you will need the "Microsoft Remote Desktop" (MRD) app. This should be built into Windows machines. It can be downloaded in Mac and Unix appstores/package managers.
-	- Open the MRD app and select "new". Enter the following information (fill in your information where there are quotations):
+	- Open the MRD app and select "new". Enter the following information (fill in your information between quotations and remove the quotations):
 		+ Connection name: datathon
 		+ PC name: `datathon.stronghold.brown.edu`
 		+ User name: `ad\"your brown username"`
