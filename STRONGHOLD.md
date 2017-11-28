@@ -12,10 +12,10 @@
 	- Inside of the windows desktop, double click "MobaXterm", which will give you a graphical interface to the Stronghold computing environment.
 		+ Click SSH
 		+ Under Basic SSH settings:
-			+ Remote host: 192.168.156.1XX:22 (You will have received the ip address in the welcome materials email.)
-			+ Click the checkbox next to "Specify username"
+			- Remote host: 192.168.156.1XX:22 (You will have received the ip address in the welcome materials email.)
+			- Click the checkbox next to "Specify username"
 			 For username, type the username given to you by CIS
-			+ The first time you log in you will be prompted to change your password. It must be dissimilar from the original password supplied by CIS.
+			- The first time you log in you will be prompted to change your password. It must be dissimilar from the original password supplied by CIS.
 		+ If you see a text/terminal interface that says `-bash-4.2$` you're all set!
 2. Analyze Neurodatathon data within the Stronghold environment.
 	- In the MobaXterm terminal window, type `jupyter notebook`.
