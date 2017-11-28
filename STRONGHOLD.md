@@ -5,9 +5,9 @@
 	- To access stronghold you will need the "Microsoft Remote Desktop" (MRD) app. This should be built into Windows machines. It can be downloaded in Mac and Unix appstores/package managers.
 	- Open the MRD app and select "new". Enter the following information (fill in your information where there are quotations):
 		+ Connection name: datathon
-		+ PC name: datathon.stronghold.brown.edu
-		+ User name: ad\"your brown username"
-		+ Password: "your brown password"
+		+ PC name: `datathon.stronghold.brown.edu`
+		+ User name: `ad\"your brown username"`
+		+ Password: `"your brown password"`
 	- After saving your connection preferences double-click on the session. You likely will be asked to first re-enter your password, then prompted for Duo two-factor authentication. Once you authenticate, you will be transfered to a windows desktop. (Contact Neurodatathon organizers if you run into issues).
 	- Inside of the windows desktop, double click "MobaXterm", which will give you a graphical interface to the Stronghold computing environment.
 		+ Click SSH
