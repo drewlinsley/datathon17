@@ -77,3 +77,8 @@
 	```
 	- You should plan to use the "optimize_" or "create_" scripts as templates for your analyses. They handle all of the data loading and saving, and you swap in and out computational mechanisms (from keras or Scikit-learn) to build your analysis.
 3. You can close your connection to the stronghold at any time by simply closing the Microsoft Remote Desktop app. If you want a more graceful exit, click on the MobaXterm window and press `ctrl + c`. This will give you the option to save and close your Python notebook. After this is complete you can exit the connection by closing the Microsoft Remote Desktop app.
+
+4. In case you run into an issue that the competition organizers cannot resolve, you will be instructed to send an email to:
+	To: stronghold-help@brown.edu
+	Subject: Datathon
+	Body: Describe your problem and include your username. Also indicate the jumpbox you connected to and the name of your VM.

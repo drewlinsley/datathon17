@@ -13,11 +13,11 @@ There are two competition tracks. There will be two winners per track.
 2. CREATE, where you will analyze the dataset and come up with a novel analysis. Because this is a brand new dataset of neural activity and behavior, participants in this track have the opportunity to come up with scientifically significant findings. The two teams judged by our panel of 3 neuroscience and datascience experts as having the most impactful and creative analyses will win.
 
 ## Prizes:
-1. 1st place winners in each track receive a grubhub gift card for $50 and 2 hours of consulting for your choice of Machine Learning, Deep Learning, or Neuroscientific ventures.
+1. 1st place winners in each track receive an Amazon gift card for $100.
 
-2. 2nd place winners in each track receive 1 hour of consulting for your choice of Machine Learning, Deep Learning, or Neuroscientific ventures.
+2. 2nd place winners in each track receive an Amazon gift card for $50. (If participating in a team, prizes will be split amongst teammates.)
 
-# Want to compete in a team? Sign up [here](https://goo.gl/forms/lha7ENCEBRN7OvYa2).
+## Want to compete in a team? Sign up [here](https://goo.gl/forms/lha7ENCEBRN7OvYa2).
 
 ## Data description
 We have split our dataset of neural and behavioral data into separate sets for (1) training and validating your model and (2) a test set that is only accessible to the conference organizers for evaluating competition participants on the OPTIMIZE track.
@@ -38,7 +38,7 @@ We have split our dataset of neural and behavioral data into separate sets for (
 
 2. After training a model, you will test the model with the `test_neural` dataset variable. The model's predictions for behavior corresponding to this neural activity will be used by the conference organizers for evaluation. See the template scripts for examples on (1) passing this data through your model and (2) producing a file with your predictions.
 
-##  How to submit your work for judging?
+## How to submit your work for judging?
 1. Optimize:
 See the "optimize_" scripts for examples. As mentioned above, you will pass "test" neural data through your mode  and save your behavior predictions for evaluation by the competition organizers. To do this you must import the "c_utils" module, select a team/username, then package your performance with the following command:
 ```
@@ -55,7 +55,7 @@ IMPORTANT: Your analysis files must be placed into the date-appropriate folder i
 
 --------
 
-###  Ideas for analyses?
+### Ideas for analyses?
 1. Optimize -- behavior decoding from neural activity.
 Optimize a deep neural network for decoding behavior from neural activity.
     Starter script: `optimize_keras_decoding.py` or `optimize_sklearn_decoding`.
@@ -74,7 +74,7 @@ Use an LSTM (recurrent neural network) to learn predictive "latent" components i
 [Motivating research](http://datta.hms.harvard.edu/documents/mmc13.pdf)
     Starter script: `create_behavior_prediction.py`
 
-###  Tips and resources for fitting models:
+### Tips and resources for fitting models:
 1. Activation functions.
 These are applied to the hidden activities in a neural network. Keras has a large list of these that you can easily swap into your model: [https://keras.io/activations/](https://keras.io/activations/)
 

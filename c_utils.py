@@ -101,10 +101,10 @@ def savefig(team_name):
 def movefile_for_eval(
         filename,
         eval_dir=os.path.join(
-            '..%ssubmissions' % os.path.sep,
-            datetime.datetime.today().strftime('%m_%d'))):
-    """Moves files to the evaluation folder."""
+            os.path.sep + 'var',
+            'www',
+            'html')):
+    """Move files to the evaluation folder."""
     shutil.move(
         filename,
         os.path.join(eval_dir, filename.split(os.path.sep)[-1]))
-
