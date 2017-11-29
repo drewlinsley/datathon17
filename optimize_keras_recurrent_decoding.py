@@ -118,10 +118,10 @@ f_dists = [
     fodist
 ]
 r_dists = [
-    fidist,
-    ffdist,
-    fcdist,
-    fodist
+    ridist,
+    rfdist,
+    rcdist,
+    rodist
 ]
 labels = ['Input', 'Forget', 'Cell', 'output']
 c_utils.plot_weights(
