@@ -1,0 +1,19 @@
+Step 1:
+	Download <your file>.rdp file from Drew's email
+Step 2:
+	Navigate to <your file>.rdp file in downloads folder
+Step 3:
+	open native remote desktop app with the command: remmina
+Step 3:
+	Tools > Import > <your file>.rdp
+Step 4:
+	Right click on <your file>.rdp in the Remmina window 
+Step 5:
+	Name your RDO
+	Ensure protocol is RDP
+	Ensure Server is set to datathon.stronghold.brown.edu:<####>
+	Set username to 'ad\<username>'
+	Set password to <your password>
+	Save
+Step 6:
+	Right click on <your file>:<####> > Connect

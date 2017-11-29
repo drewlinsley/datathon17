@@ -12,7 +12,7 @@
 	- Inside of the windows desktop, double click "MobaXterm", which will give you a graphical interface to the Stronghold computing environment.
 		+ Click SSH
 		+ Under Basic SSH settings:
-			- Remote host: 192.168.156.1XX (You will have received the ip address in the welcome materials email.)
+			- Remote host: 192.168.156.1XX (You will receive the ip address in the welcome materials email.)
 			- Click the checkbox next to "Specify username"
 			 For username, type `datathon`
 			- For password, type `datathon`. The first time you log in you will be prompted to change this password. It must be dissimilar from the original password supplied by CIS.
