@@ -34,7 +34,7 @@ We have split our dataset of neural and behavioral data into separate sets for (
  ```
  The template scripts (`optimize_*.py` or `create_*.py`) provide examples for how to manipulate the data in the dictionary. Each dataset has neural or behavioral recordings, or an "index" that labels the different dimensions of each recording. For instance, the neural datasets have 22 dimensions (matrices with N rows and 22 columns), which are indexed by the aforementioned "index" variables.
 
- The `train_*` dataset variables (neural and behavior) each have 4447 rows. There are 22 neural dimensions and 46 behavior dimensions. It is up to you to manipulate those to build models for either optimizing behavior decoding from the neural activity or creating a novel analysis. For validation, it is preferable to cross-validate within this dataset (see the template scripts for examples).
+ The `train_*` dataset variables (neural and behavior) each have 7518 rows. There are 22 neural dimensions and 46 behavior dimensions. It is up to you to manipulate those to build models for either optimizing behavior decoding from the neural activity or creating a novel analysis. For validation, it is preferable to cross-validate within this dataset (see the template scripts for examples).
 
 2. After training a model, you will test the model with the `test_neural` dataset variable. The model's predictions for behavior corresponding to this neural activity will be used by the conference organizers for evaluation. See the template scripts for examples on (1) passing this data through your model and (2) producing a file with your predictions.
 
